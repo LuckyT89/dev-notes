@@ -1,1 +1,13 @@
 Angular notes go here!
+
+Getting started
+Make sure you have Node and Git installed on your computer
+Install the Angular CLI with this command:
+$ npm install -g @angular/cli
+
+Create a new project with this command (replace my-project-name with the name you want to use):
+$ ng new my-project-name
+It will ask if you want to include Angular router in your project and what stylesheet format to use. Then it will 
+create a project folder for you. 
+
+Open the new project in vs code and you will see a ton of starter folders and files. Everything we want to use will be 

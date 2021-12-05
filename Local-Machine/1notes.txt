@@ -1,0 +1,28 @@
+After reimaging computer
+
+Install vs code
+    -install vs code icons extension
+    -install Prettier extension
+Install Node
+Install Git
+Install Angular CLI
+
+Set up SSH key so you can push changes to github without having to sign in
+    https://syntaxbytetutorials.com/add-a-github-ssh-key-on-windows/
+
+Try to make a new Angular project with this command:
+$ ng new test
+You may get an error message saying the file "cannot be loaded because running scripts is disabled on this system."
+Open PowerShell as an administrator and run the following command so this will not appear anymore:
+$ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
+https://www.roelpeters.be/solved-running-scripts-is-disabled-on-this-system-in-powershell/
+
+
+You will get a bunch of text in the console after the project is created saying:
+"warning: LF will be replaced by CRLF in src/polyfills.ts. The file will have its original line endings in your working directory"
+
+
+
+
+
+
