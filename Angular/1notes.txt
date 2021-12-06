@@ -10,4 +10,16 @@ $ ng new my-project-name
 It will ask if you want to include Angular router in your project and what stylesheet format to use. Then it will 
 create a project folder for you. 
 
-Open the new project in vs code and you will see a ton of starter folders and files. Everything we want to use will be 
+Open the new project in vs code and you will see a ton of starter folders and files. Everything we want to use will be in the src > app folder
+
+Open a terminal in vs code and run this command to start a local server:
+$ ng serve
+This will start a local server on port 4200, click the link in the console to open the project in a browser: http://localhost:4200/
+
+The page that loads is all the starter stuff they put in app.component.html
+Delete everything in this file, add something like:
+<h1>Hello World</h1>
+save the file and see how it updates in the browser. 
+
+You now have an Angular project up and running. 
+

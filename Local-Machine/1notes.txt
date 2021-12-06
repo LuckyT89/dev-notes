@@ -20,6 +20,8 @@ https://www.roelpeters.be/solved-running-scripts-is-disabled-on-this-system-in-p
 
 You will get a bunch of text in the console after the project is created saying:
 "warning: LF will be replaced by CRLF in src/polyfills.ts. The file will have its original line endings in your working directory"
+To stop this happening, enter this command:
+$ git config --global core.autocrlf false
 
 
 
