@@ -1,0 +1,4 @@
+Building your first Angular app
+
+Prerequisites- you will need Node and NPM to use Angular CLI. Note NPM automatically comes with Node when you install it. 
+
