@@ -24,6 +24,11 @@ To stop this happening, enter this command:
 $ git config --global core.autocrlf false
 
 
+Set PowerShell to start in the Desktop directory when you open it.
+    -navigate to the Documents folder, create a folder called WinwdowsPowerShell
+    -inside the new folder, create a file called profile.ps1
+    -add the following line to the file and save it: Set-Location C:\Users\TLuck\Desktop
+Now when you open PowerShell it should start in this directory
 
 
 
