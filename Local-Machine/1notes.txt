@@ -25,10 +25,15 @@ $ git config --global core.autocrlf false
 
 
 Set PowerShell to start in the Desktop directory when you open it.
-    -navigate to the Documents folder, create a folder called WinwdowsPowerShell
-    -inside the new folder, create a file called profile.ps1
-    -add the following line to the file and save it: Set-Location C:\Users\TLuck\Desktop
-Now when you open PowerShell it should start in this directory
+    -have Powershell pinned to the taskbar
+    -right click on Powershell in the taskbar
+    -right click on the Windows PowerShell option and click Properties
+    -in the Shortcut tab, set the Start in field to: C:\Users\TLuck\Desktop
+https://stackoverflow.com/questions/32069265/how-do-you-set-powershells-default-directory
+Finding the Properties option was a bit wonky- I had to do it from the taskbar, not the start menu. This option is better than making a profile file because it will 
+open PowerShell in this directory but when I am working in a project in VS code and open a terminal, it will still default into whatever directory that project is.
+
+
 
 
 
