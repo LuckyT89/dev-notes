@@ -2,7 +2,8 @@ After reimaging computer
 
 Install vs code
     -install vs code icons extension
-    -install Prettier extension
+    -install Prettier extension. search 'format' in settings and set Prettier to default formatter, select checkboxes for format on save. 
+    -intall Bracket Pair Colorizer
 Install Node
 Install Git
 Install Angular CLI
