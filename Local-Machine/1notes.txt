@@ -5,6 +5,7 @@ Install vs code
     -install Prettier extension. search 'format' in settings and set Prettier to default formatter, select checkboxes for format on save. 
     -intall Bracket Pair Colorizer
     -install Angular Language Service (book recommends Angular Essentials which includes this and a bunch of other extensions, I just use this for now)
+    -open settings and turn off compact folders
 Install Node
 Install Git
 Install Angular CLI
