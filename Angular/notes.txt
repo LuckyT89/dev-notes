@@ -13,8 +13,8 @@ create a project folder for you.
 Open the new project in vs code and you will see a ton of starter folders and files. Everything we want to use will be in the src > app folder
 
 Open a terminal in vs code and run this command to start a local server:
-$ ng serve
-This will start a local server on port 4200, click the link in the console to open the project in a browser: http://localhost:4200/
+$ ng serve -o
+This will start a local server on port 4200. The -o flag will automatically open this project in your default browser. 
 
 The page that loads is all the starter stuff they put in app.component.html
 Delete everything in this file, add something like:
