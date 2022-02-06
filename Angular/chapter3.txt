@@ -1,0 +1,41 @@
+1. Create a new component and display it on the page.
+
+Components are the building blocks of an Angular app. They control the different parts of a webpage. Components are linked in a tree structure- a component
+can have a parent component as well as child components and they can pass data back and forth to each other.
+
+In the terminal, in the root of the project, enter this command to make a new component called example:
+$ ng generate component example
+
+This will create a folder called example and will include 4 files inside it- an HTML, CSS, TS, and spec file (for unit tests).
+
+When you create a new component, it must be registered in a module so that is can be found and used. When a component is created using the CLI command above, this is
+done automatically and it is added to the app.module.ts file- it is imported and added to the declarations property of @NgModule.
+
+Now that you have the new component made, you can display it on the page. In app.component.html (which should be blank), add the selector for your new component:
+<app-example></app-example>
+
+This will add the default template message of 'example works!' to the screen.
+
+
+
+2. Create a class property and display it in the template.
+
+In the class, create a public property like this:
+
+export class ExampleComponent implements OnInit {
+  name = 'Tyler';
+
+  constructor() {}
+
+  ngOnInit(): void {}
+}
+
+
+Then in the template HTML file, display the name property like this:
+<p>Hello {{ name }}</p>
+
+This is interpolation and will display 'Hello Tyler' to the screen. Note that the property of 'name' in the class must be a public property for this to work. All properties are public properties unless specifically 
+made private. You make a property private by using the private keyword when you declare it like this:
+private name = 'Tyler';
+
+Then you would not be able to use this property in the template. 
