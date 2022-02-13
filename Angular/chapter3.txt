@@ -7,7 +7,18 @@
 3. Use proptery binding to set the innerText property and display the property in the template this way. 
 
 
-4. In the stylesheet, make a class called 'red' that turns the font color to red. In the component class, add a boolean property called 'isRed' and set it to true. In the template 
-use style binding to add this class to the text being displayed if the isRed property is true. 
+4. In the stylesheet, make a class called 'red' that turns the font color to red. In the component class, add a boolean property 
+called 'isRed' and set it to true. In the template use class binding to add this class to the text being displayed if the isRed 
+property is true. 
 
 
+5. Create two more styles in the stylesheet- one to change the font weight and one to change the font size. In the class, create 
+a property that is an array of strings with the class names and in the template use class binding to display all three styles. 
+
+
+6. Change the class property from an array of strings to an object with key value pairs for each class name that is a boolean value. 
+See how they turn on or off as you change the values from true to false. 
+
+
+7. Create a method in the class that logs a message to the console. Then in the template, create a button that calls this method 
+when it is clicked. 
