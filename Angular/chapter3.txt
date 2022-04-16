@@ -1,24 +1,97 @@
 1. Create a new component and display it on the page.
 
+In the terminal in the root of the project enter the following command:
+$ ng generate component sandbox
 
-2. In the new component class, give it a string property and assign it a value. Then use interpolation to display it in the template. 
+This will create a new component called sandbox (you can name this whatever you want, sandbox seems like a good name for testing 
+things). You will see it add a folder for this new component inside the app folder and it will contain your html, css, ts, and 
+spec.ts files for this component. Notice that it will also automatically add this component to the declarations property inside 
+app.module.ts.
 
+Inside app.component.html add the following:
+<app-sandbox></app-sandbox>
 
-3. Use proptery binding to set the innerText property and display the property in the template this way. 
-
-
-4. In the stylesheet, make a class called 'red' that turns the font color to red. In the component class, add a boolean property 
-called 'isRed' and set it to true. In the template use class binding to add this class to the text being displayed if the isRed 
-property is true. 
-
-
-5. Create two more styles in the stylesheet- one to change the font weight and one to change the font size. In the class, create 
-a property that is an array of strings with the class names and in the template use class binding to display all three styles. 
+This adds the selector for your new componet and should display the default text of 'sandbox works!' in the browser
 
 
-6. Change the class property from an array of strings to an object with key value pairs for each class name that is a boolean value. 
-See how they turn on or off as you change the values from true to false. 
+
+2. In sandbox.component.ts create a string property and assign it a value, then use interpolation to display that property in the 
+html.
+
+Inside sandbox.component.ts add this property inside the class, above the constructor:
+name: string = 'Tyler';
+
+Inside sandbox.component.html, modify the default paragraph tag to this:
+<p>Hello {{ name }}</p>
+
+It should now say 'Hello Tyler' in the browser.
 
 
-7. Create a method in the class that logs a message to the console. Then in the template, create a button that calls this method 
-when it is clicked. 
+
+3. Apply a css style to an html element.
+
+Delete the paragraph in sandbox.component.html and remove the name property in sandbox.component.ts.
+
+In sandbox.component.scss add the following:
+.color {
+  color: red;
+}
+
+In sandbox.component.html add the following:
+<h1 class="color">Testing</h1>
+
+'Testing' should appear in the browser in red.
+
+
+
+4. Use class binding to apply a css style to an html element.
+
+In sandbox.component.ts add the following property:
+hasColor: boolean = true;
+
+In sandbox.component.html modify the heading to this:
+<h1 [class.color]="hasColor">Testing</h1>
+
+'Testing' should still appear in red in the browser. Notice how if you change the hasColor property in sandbox.component.ts to 
+false it will not display in red.
+
+
+
+5. Use class binding to apply multiple styles to an html element.
+
+In sandbox.component.scss add the following rules after the one you already have:
+.background {
+  background-color: lightblue;
+}
+.size {
+  font-size: 5em;
+}
+
+
+In sandbox.component.ts delete the hasColor property and replace it with this property:
+currentClasses: string = 'color background size';
+
+
+In sandbox.component.html modify the heading to this:
+<h1 [class]="currentClasses">Testing</h1>
+
+Notice all three style should be applied to the heading in the browser. If you remove any of them from the string property then 
+they will be removed. 
+
+
+
+6. Modify the class binding to use an object instead of a string.
+
+In sandbox.component.ts modify the currentClasses property to the following:
+currentClasses: {} = {
+  color: true,
+  background: true,
+  size: true,
+};
+
+The same styles should still be applied and you can toggle them on and off by setting the different currentClasses object 
+properties to true or false. 
+
+
+
+Getting data from the template
