@@ -10,21 +10,9 @@ Install Node
 Install Git
 Install Angular CLI
 
+
 Set up SSH key so you can push changes to github without having to sign in
     https://syntaxbytetutorials.com/add-a-github-ssh-key-on-windows/
-
-Try to make a new Angular project with this command:
-$ ng new test
-You may get an error message saying the file "cannot be loaded because running scripts is disabled on this system."
-Open PowerShell as an administrator and run the following command so this will not appear anymore:
-$ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
-https://www.roelpeters.be/solved-running-scripts-is-disabled-on-this-system-in-powershell/
-
-
-You will get a bunch of text in the console after the project is created saying:
-"warning: LF will be replaced by CRLF in src/polyfills.ts. The file will have its original line endings in your working directory"
-To stop this happening, enter this command:
-$ git config --global core.autocrlf false
 
 
 Set PowerShell to start in the Desktop directory when you open it.
@@ -35,9 +23,3 @@ Set PowerShell to start in the Desktop directory when you open it.
 https://stackoverflow.com/questions/32069265/how-do-you-set-powershells-default-directory
 Finding the Properties option was a bit wonky- I had to do it from the taskbar, not the start menu. This option is better than making a profile file because it will 
 open PowerShell in this directory but when I am working in a project in VS code and open a terminal, it will still default into whatever directory that project is.
-
-
-
-
-
-
